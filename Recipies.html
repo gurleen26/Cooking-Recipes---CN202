@@ -1,0 +1,96 @@
+<!DOCTYPE html><!--1276px-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Recipies-DishDialect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans:wght@600&family=Salsa&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section class="header">
+
+        <nav>
+			<a href="index.html"><img src="Images/Heading.png"></a>
+			<div class="nav-links" id="navLinks">
+				
+				<ul>
+                    <li class="item"><a href="index.html">HOME</a></li>
+                    <li class="item"><a href="Recipies.html">RECIPES</a></li>
+                    <li class="item"><a href="Quick.html">QUICK & EASY</a></li>
+                    <li class="item"><a href="TableTalk.html">TABLE TALK</a></li>
+                    <li class="item"><a href="About.html">ABOUT US</a></li>
+				</ul>
+			</div>
+			
+		</nav>
+        <section>
+            
+    
+            <div class="travel1">
+                <div class="db">
+                    <a href="biryani.html"><img src="Images/biryani.jpg"></a>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                    <script>
+		
+                        var navLinks = document.getElementById("navLinks");
+                
+                        function showMenu(){
+                            navLinks.style.right= "0";
+                        }
+                        function hideMenu(){
+                            navLinks.style.right= "-200px";
+                        }
+                
+                    </script>
+                
+                    <div class="layer">
+                        <h3>Biryani<i class="fa-sharp fa-regular fa-plate-utensils"></i></h3>
+                        
+                    </div>
+                </div>
+                <div class="swt">
+                    <a href="onepot.html"><img src="Images/onepot.jpg"></a>
+                    <div class="layer">
+                        <h3>Onepot Dishes<i class="fa-sharp fa-regular fa-plate-utensils"></i></h3>
+                    </div>
+                </div>
+                <div class="prs">
+                    <a href="paneer1.html"><img src="Images/paneer tikka.jpg"></a>
+                    <div class="layer">
+                        <h3>Paneer <i class="fa-sharp fa-regular fa-plate-utensils"></i></h3>
+                    </div>
+                </div>
+                <div class="bli">
+                    <a href="potato.html"><img src="Images/fries.jpg"></a>
+                    <div class="layer">
+                        <h3>Potato dishes <i class="fa-sharp fa-regular fa-plate-utensils"></i></h3>
+                    </div>
+                </div>
+                <div class="hkg">
+                    <a href="rice.html"><img src="Images/fried rice.jpg"></a>
+                    <div class="layer">
+                        <h3>Rice recipes<i class="fa-sharp fa-regular fa-plate-utensils"></i></h3>
+                    </div>
+                </div>
+                <div class="sydn">
+                    <a href="street.html"><img src="Images/street.jpg"></a>
+                    <div class="layer">
+                        <h3>Street Food<i class="fa-sharp fa-regular fa-plate-utensils"></i></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+</body>
+
+</html>

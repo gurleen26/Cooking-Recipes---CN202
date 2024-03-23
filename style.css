@@ -1,0 +1,401 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 49px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(172 115 64 / 30%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.2; */
+}
+
+/* Navigatition Bar: Logo and Image */
+#logo {
+    height: 56px;
+    margin: 25px 30px;
+}
+
+#logo img {
+    height: 80px;
+    width: 86px;
+    border-radius: 8px;
+    margin: 1px 5px;
+}
+
+
+#logo img:hover {
+    color: rgb(23, 17, 17);
+    
+    cursor: pointer;
+}
+
+
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(Images/collage2.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(230, 113, 50, 0.5), rgba(166, 106, 37, 0.7)), url(Pictures/h1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+}
+.header1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(208, 208, 208, 0.3), rgba(208, 208, 208, 0.3)), url(Images/bgg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+    
+   flex-direction: column;
+}
+
+.nav-links {
+    flex:1;
+    text-align: right;
+    flex-direction: column;
+    
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+    font-size: 12px;
+}
+.abc{
+    margin-top: 110px;
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+    font-size: 25px;
+}
+.nav-links ul li a {
+    color:rgb(9, 9, 9);
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+   
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+#home h1 {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: rgb(15, 14, 14);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size:20px;
+    
+}
+
+#home img {
+    height: 90%;
+}
+.text-box3 h2{
+    font-size:50px;
+    font-style: italic;
+    font-weight:none;
+}
+.text-box3 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #000;
+}
+.recipes{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+/* -------------------------------------------------------------- */
+.travel1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.db {
+    flex-basis: 49%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.swt {
+    flex-basis: 49%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.prs {
+    flex-basis: 49%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.bli {
+    flex-basis: 49%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.hkg {
+    flex-basis: 49%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.sydn {
+    flex-basis:49%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.db img {
+    width: 100%;
+    display: block;
+}
+
+.swt img {
+    width: 100%;
+    display: block;
+}
+
+.prs img {
+    width: 100%;
+    display: block;
+}
+
+.bli img {
+    width: 100%;
+    display: block;
+}
+
+.hkg img {
+    width: 100%;
+    display: block;
+}
+
+.sydn img {
+    width: 100%;
+    display: block;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(19, 89, 114, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+/***************************************/
+/* @media(max-width: 700px) {
+
+    /*for adjusting dimensions in mobile phone.... */
+    /*#navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+
+    #home {
+        height: 250px;
+        padding: 3px 68px;
+    }
+
+    #home::before {
+        height: 400px;
+    }
+
+    #home p {
+        font-size: 13px;
+    }
+
+    #home img {
+        height: 51%;
+    }
+
+    #services {
+        flex-direction: column;
+    }
+
+    #services .box {
+        padding: 14px;
+        margin: 2px 40px;
+        border-radius: 28px;
+        margin-bottom: 20px;
+    }
+
+    #services .box img {
+        height: 143px;
+        width: 253px;
+        margin: auto;
+        display: block;
+    }
+
+    #clients {
+        flex-wrap: wrap;
+    }
+
+    #clients img {
+        width: 66px;
+        padding: 2px 6px;
+        height: auto;
+    }
+
+    .h-primary {
+        font-size: 26px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .h-1 {
+        font-size: 2.5rem;
+        padding: 30px 34px 0px 34px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+} */
